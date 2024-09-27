@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Form</title>
+</head>
+<body>
+    <h2>Employee Data Form</h2>
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="employeeID">Employee ID:</label>
+            <input type="text" id="employeeID" name="employeeID" required>
+            <br>
+            <br>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br>
+            <br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <br>
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="8" required></textarea>
+            <br>
+            <br>
+        </fieldset>
+    </br>
+</br>
+        <!-- Employment Information -->
+        <fieldset>
+            <legend>Employment Information</legend>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            <br>
+            <br>
+
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required>
+            <br>
+            <br>
+
+            <label for="employment_type">Employment Type:</label><br>
+            <select id="employment_type" name="employment_type" required>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Intern">Intern</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" name="salary" required><br><br>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required><br><br>
+        </fieldset>
+    </br>
+</br>
+
+        <!-- Emergency Contact Information -->
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <label for="emergency_name">Emergency Contact Name:</label>
+            <input type="text" id="emergency_name" name="emergency_name" required><br><br>
+
+            <label for="emergency_relationship">Relationship:</label>
+            <input type="text" id="emergency_relationship" name="emergency_relationship" required><br><br>
+
+            <label for="emergency_phone">Phone Number:</label>
+            <input type="tel" id="emergency_phone" name="emergency_phone" required><br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
